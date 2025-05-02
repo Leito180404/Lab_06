@@ -12,10 +12,17 @@ class StackArray<E> implements Stack<E> {
         }
         array[++tope] = x;
     }
-    
+
+    @Override
     public E pop() throws ExceptionEmpty {
-        // include here your code
+        if (tope == -1) {
+            throw new ExceptionEmpty("No se puede hacer pop, ya que la pila esta vavcia.");
         }
+        E element = array[tope];
+        array[tope--] = null;
+        return element;
+    }
+
         public E top() throws ExceptionEmpty {
         // include here your code
         }
