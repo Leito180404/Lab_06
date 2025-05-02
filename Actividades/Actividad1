@@ -3,4 +3,5 @@ public interface Stack<E> {
     E pop() throws ExceptionIsEmpty;
     E top() throws ExceptionIsEmpty;
     boolean isEmpty();
-} 
+}
+ 
