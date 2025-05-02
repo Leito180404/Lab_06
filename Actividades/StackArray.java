@@ -29,19 +29,21 @@ class StackArray<E> implements Stack<E> {
         }
             return array[tope];
         }
-        public boolean isEmpty() {
+    
+    public boolean isEmpty() {
         return this.tope == -1;
-        }
-        public boolean isFull() {
-            return tope == array.length - 1;
+    }
+        
+    public boolean isFull() {
+        return tope == array.length - 1;
         }
         
-        @Override
-        public String toString() {
-            StringBuilder sb = new StringBuilder();
-            for (int i = tope; i >= 0; i--) {
-                sb.append(array[i]).append(" ");
-            }
-            return sb.toString().trim();
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = tope; i >= 0; i--) {
+            sb.append(array[i]).append(" ");
         }
+        return sb.toString().trim();
+    }
 }  
