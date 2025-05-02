@@ -24,17 +24,24 @@ class StackArray<E> implements Stack<E> {
     }
 
         public E top() throws ExceptionEmpty {
-        // include here your code
+            if (tope == -1) {
+                throw new ExceptionEmpty("No se puede acceder al tope ya que la pila esta vacia.");
+            }
+            return array[tope];
         }
         public boolean isEmpty() {
         return this.tope == -1;
         }
-        public boolean isFull (){
-        // include here your code
+        public boolean isFull() {
+            return tope == array.length - 1;
         }
-        //The elements must be included in the chain from the one at the top
-        //to the one at the bottom of the stack.
-        public String toString(){
-        // include here your code
-    }
+        
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            for (int i = tope; i >= 0; i--) {
+                sb.append(array[i]).append(" ");
+            }
+            return sb.toString().trim();
+        }
 }  
