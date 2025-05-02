@@ -23,10 +23,10 @@ class StackArray<E> implements Stack<E> {
         return element;
     }
 
-        public E top() throws ExceptionEmpty {
-            if (tope == -1) {
-                throw new ExceptionEmpty("No se puede acceder al tope ya que la pila esta vacia.");
-            }
+    public E top() throws ExceptionEmpty {
+        if (tope == -1) {
+            throw new ExceptionEmpty("No se puede acceder al tope ya que la pila esta vacia.");
+        }
             return array[tope];
         }
         public boolean isEmpty() {
