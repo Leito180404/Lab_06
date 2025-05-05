@@ -4,7 +4,7 @@ public class Test {
    public static void main(String[] args) {
         QueueLink<Integer> queueInt = new QueueLink<>();
 
-        System.out.println("¿Está vacia? " + queueInt.isEmpty());
+        System.out.println("¿Esta vacia? " + queueInt.isEmpty());
 
         try {
             queueInt.enqueue(10);
