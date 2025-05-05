@@ -12,7 +12,8 @@ class QueueLink<E> implements Queue<E> {
     public void enqueue(E x){
         Node<E> aux = new Node<E>(x);
         if (this.isEmpty()) {
-            this.first = aux;}
+            this.first = aux;
+            this.last = aux;}
         else{
             this.last.setNext(aux);
             this.last = aux;}
@@ -38,7 +39,7 @@ class QueueLink<E> implements Queue<E> {
 
         public E front() throws ExceptionEmpty {
             if (isEmpty()) {
-                throw new ExceptionEmpty("La cola está vacia.");
+                throw new ExceptionEmpty("La cola esta vacia.");
             }
             return first.getDato();
         }

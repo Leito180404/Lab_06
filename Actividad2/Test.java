@@ -10,7 +10,7 @@ public class Test {
             queueInt.enqueue(10);
             queueInt.enqueue(20);
             queueInt.enqueue(30);
-            System.out.println("Cola despues de 10, 20, 30: " + queueInt.toString()); 
+            System.out.println("Cola despues de agregar " + queueInt.toString()); 
 
             System.out.println("Frente: " + queueInt.front());
 
