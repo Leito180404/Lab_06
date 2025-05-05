@@ -17,21 +17,43 @@ class QueueLink<E> implements Queue<E> {
             this.last.setNext(aux);
             this.last = aux;}
         }
-    public E dequeue() throws ExceptionEmpty {
-        // include here your code
-    }
-    public E back() throws ExceptionEmpty {
-        // include here your code
-    }
-    public E front() throws ExceptionEmpty {
-        // include here your code
-    }
-    public boolean isEmpty() {
-        // include here your code
-    }
-    //The elements must be included in the chain from the one at the front
-    //to the one at the back of the queue.
-    public String toString(){
-        // include here your code
-    }
+        public E dequeue() throws ExceptionEmpty {
+            if (isEmpty()) {
+                throw new ExceptionEmpty("La cola esta vacia.");
+            }
+            E data = first.getDato();
+            first = first.getNext();
+            if (first == null) {
+                last = null;
+            }
+            return data;
+        }
+
+        public E back() throws ExceptionEmpty {
+            if (isEmpty()) {
+                throw new ExceptionEmpty("La cola esta vacia.");
+            }
+            return last.getDato();
+        }
+
+        public E front() throws ExceptionEmpty {
+            if (isEmpty()) {
+                throw new ExceptionEmpty("La cola está vacia.");
+            }
+            return first.getDato();
+        }
+
+        public boolean isEmpty() {
+            return first == null;
+        }
+
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            Node<E> current = first;
+            while (current != null) {
+                sb.append(current.getDato()).append(" ");
+                current = current.getNext();
+            }
+            return sb.toString().trim();
+        }
 }
