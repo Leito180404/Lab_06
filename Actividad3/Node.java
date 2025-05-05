@@ -32,5 +32,16 @@ public class Node<T> {
                 ", next=" + next +
                 '}';
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false; 
+        }
+        Node<?> otherNode = (Node<?>) obj;
+        return dato.equals(otherNode.dato);
+    }
 }
 
