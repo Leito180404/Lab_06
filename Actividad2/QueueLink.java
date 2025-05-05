@@ -20,7 +20,7 @@ class QueueLink<E> implements Queue<E> {
         }
         public E dequeue() throws ExceptionEmpty {
             if (isEmpty()) {
-                throw new ExceptionEmpty("La cola esta vacia.");
+                throw new ExceptionEmpty("esta vacio bro");
             }
             E data = first.getDato();
             first = first.getNext();
@@ -32,14 +32,14 @@ class QueueLink<E> implements Queue<E> {
 
         public E back() throws ExceptionEmpty {
             if (isEmpty()) {
-                throw new ExceptionEmpty("La cola esta vacia.");
+                throw new ExceptionEmpty("vacio bro");
             }
             return last.getDato();
         }
 
         public E front() throws ExceptionEmpty {
             if (isEmpty()) {
-                throw new ExceptionEmpty("La cola esta vacia.");
+                throw new ExceptionEmpty("esta vacio bro");
             }
             return first.getDato();
         }
