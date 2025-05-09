@@ -16,17 +16,19 @@ public class Test {
             stackInt.push(10);
             stackInt.push(20);
             stackInt.push(30);
-            System.out.println("Pila de enteros despues de agregar: ");
+            System.out.println("Pila de enteros despues de agregar: " + stackInt.toString());
             System.out.println("Top: " + stackInt.top());  // Ver el tope
             System.out.println("Pop: " + stackInt.pop());  // Eliminar el tope
+            System.out.println("despues de eliminar : " + stackInt.toString());
             System.out.println("Top despues del pop: " + stackInt.top());
 
             //pila de cadenas
             stackString.push("Hola");
             stackString.push("Mundo");
-            System.out.println("Pila de cadenas despues de agregar: ");
+            System.out.println("Pila de cadenas despues de agregar: " + stackString.toString());
             System.out.println("Top: " + stackString.top());  // Ver el tope
             System.out.println("Pop: " + stackString.pop());  // Eliminar el tope
+            System.out.println("despues de eliminar : " + stackString.toString());
             System.out.println("Top despues del pop: " + stackString.top());
 
         } catch (ExceptionEmpty e) {
