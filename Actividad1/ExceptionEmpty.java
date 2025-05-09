@@ -1,3 +1,5 @@
+package Actividad1;
+
 public class ExceptionEmpty extends Exception {
 
     public ExceptionEmpty() {

@@ -1,3 +1,4 @@
+package Actividad1;
 public class Test {
    public static void main(String[] args) {
         StackArray<Integer> stackInt = new StackArray<>(4);
