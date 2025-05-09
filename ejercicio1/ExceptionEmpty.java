@@ -3,7 +3,7 @@ package ejercicio1;
 public class ExceptionEmpty extends Exception {
 
     public ExceptionEmpty() {
-        super("La pila no tiene nada.");
+        super("la lista no tiene nada");
     }
 
     public ExceptionEmpty(String message) {
