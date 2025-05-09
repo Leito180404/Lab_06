@@ -10,9 +10,7 @@ public class Test {
 
         System.out.println("¿Esta vacia la pila de enteros? " + stackInt.isEmpty());
         System.out.println("¿Esta vacia la pila de strings " + stackString.isEmpty());
-
-
-        
+    
         try {
             //pila de enteros
             stackInt.push(10);
