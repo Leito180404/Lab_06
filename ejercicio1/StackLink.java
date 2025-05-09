@@ -2,8 +2,7 @@ package ejercicio1;
 import Actividad1.Stack;
 import Actividad1.ExceptionEmpty;
 import Actividad2.Node;
-import Actividad1.*;
-import Actividad2.*;
+
 
 public class StackLink<E> implements Stack<E> {
     private Node<E> top;
