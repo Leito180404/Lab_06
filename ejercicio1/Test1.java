@@ -2,8 +2,7 @@ package ejercicio1;
 
 import Actividad1.Stack;
 import Actividad1.ExceptionEmpty;
-
-public class Test {
+public class Test1 {
     public static void main(String[] args) {
         Stack<Integer> stackInt = new StackLink<>();
         Stack<String> stackString = new StackLink<>();
