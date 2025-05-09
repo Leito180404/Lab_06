@@ -11,7 +11,7 @@ public class Test {
             colaPrioridad.enqueue(20, 1);  // Elemento 20 con prioridad 1 (menor prioridad)
             colaPrioridad.enqueue(30, 3);  // Elemento 30 con prioridad 3 (mayor prioridad)
             
-            System.out.println("Cola después de agregar: " + colaPrioridad.toString()); 
+            System.out.println("Cola despues de agregar: " + colaPrioridad.toString()); 
 
             // Mostrar el primer y ultimo elemento
             System.out.println("Frente (maxima prioridad): " + colaPrioridad.front());
@@ -27,7 +27,7 @@ public class Test {
             System.out.println("Elemento eliminado: " + colaPrioridad.dequeue());
             System.out.println("Elemento eliminado: " + colaPrioridad.dequeue());
 
-            System.out.println("verificacion si estaa vacia" + colaPrioridad.isEmpty());
+            System.out.println("verificacion si esta vacia" + colaPrioridad.isEmpty());
 
         } catch (ExceptionEmpty e) {
             System.out.println("Error detectado: " + e.getMessage());
