@@ -40,4 +40,18 @@ public class StackLink<E> implements Stack<E> {
     public boolean isEmpty() {
         return top == null;
     }
+    
+    @Override
+    public String toString() {
+        if (isEmpty()) {
+            return "Pila vacia";
+        }
+        StringBuilder sb = new StringBuilder();
+        Node<E> current = top;
+        while (current != null) {
+            sb.append(current.getDato()).append(" -> ");
+            current = current.getNext();
+        }
+        return sb.substring(0, sb.length() - 4); 
+    }
 }
