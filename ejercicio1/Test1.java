@@ -22,8 +22,8 @@ public class Test1 {
             System.out.println("Top despues del pop: " + stackInt.top());
 
             //pila de cadenas
-            stackString.push("Hola");
-            stackString.push("Mundo");
+            stackString.push("Algoritmos");
+            stackString.push("estructuras");
             System.out.println("Pila de cadenas despues de agregar: " + stackString.toString());
             System.out.println("Top: " + stackString.top());  // Ver el tope
             System.out.println("Pop: " + stackString.pop());  // Eliminar el tope
