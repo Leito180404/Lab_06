@@ -29,16 +29,30 @@ class PriorityQueueLinkSort<E,N> implements PriorityQueue<E,N> {
         return aux;
     }
     public E back() throws ExceptionEmpty {
-    // include here your code
+        if (isEmpty()) {
+            throw new ExceptionEmpty("vacio bro");
+        }
+        return last.getDato();
     }
+
     public E front() throws ExceptionEmpty {
-    // include here your code 
+        if (isEmpty()) {
+            throw new ExceptionEmpty("esta vacio bro");
+        }
+        return first.getDato();
     }
-    public boolean isEmpty() {
-    // include here your code
-    }
-    // Elements must be included in the string as they are located in the list
-    public String toString(){
-    // include here your code
-    }
+
+        public boolean isEmpty() {
+            return first == null;
+        }
+
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            Node<E> current = first;
+            while (current != null) {
+                sb.append(current.getDato()).append(" ");
+                current = current.getNext();
+            }
+            return sb.toString().trim();
+        }
 } 
