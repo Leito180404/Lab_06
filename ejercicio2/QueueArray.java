@@ -8,6 +8,7 @@ public class QueueArray<E> implements Queue<E> {
     private int last;  
     private int size; 
 
+    @SuppressWarnings("unchecked")    
     public QueueArray(int capacity) {
         this.data = (E[]) new Object[capacity];
         this.first = 0;
