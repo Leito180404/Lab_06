@@ -1,6 +1,6 @@
 package Actividad2;
 
-class QueueLink<E> implements Queue<E> {
+public class QueueLink<E> implements Queue<E> {
     private Node<E> first;
     private Node<E> last;
     
