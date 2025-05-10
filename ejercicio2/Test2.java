@@ -30,7 +30,7 @@ public class Test2 {
             System.out.println("ultimo de la cola de enteros: " + queueInt.back());  // Ver el ultimo
             System.out.println("Elemento eliminado (dequeue): " + queueInt.dequeue());  // Eliminar el frente
             System.out.println("Después de eliminar: " + queueInt.toString());
-            System.out.println("Frente después de eliminar: " + queueInt.front());  // Ver el nuevo frente
+            System.out.println("Frente despues de eliminar: " + queueInt.front());  // Ver el nuevo frente
 
             queueString.enqueue("Algoritmos");
             queueString.enqueue("Estructuras");
