@@ -3,6 +3,7 @@ package Actividad1;
 class StackArray<E> implements Stack<E> {
     private E[] array;
     private int tope;
+    
     @SuppressWarnings("unchecked")
     public StackArray(int n){
         this.array = (E[])new Object[n];
