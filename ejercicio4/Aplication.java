@@ -35,7 +35,7 @@ public class Aplication {
         System.out.println(symbolBalancing("((()))[]"));    // true
         System.out.println(symbolBalancing("([])[]("));       // false
         System.out.println(symbolBalancing("([{)]}"));       // false
-        System.out.println(symbolBalancing("[")); //false
+        System.out.println(symbolBalancing("["));           //false
         System.out.println(symbolBalancing("[][][]{{{}}}")); // true
     }
 }
