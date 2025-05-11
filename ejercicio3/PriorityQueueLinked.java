@@ -51,7 +51,7 @@ public class PriorityQueueLinked<E, N extends Number> implements PriorityQueue<E
                 }
             }
         }
-        throw new ExceptionEmpty("La cola de prioridad está vacía");
+        throw new ExceptionEmpty("La cola de prioridad esta vacia");
     }
 
     @Override 
