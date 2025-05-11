@@ -31,11 +31,12 @@ public class Aplication {
 
     public static void main(String[] args) {
         // Pruebas
-        System.out.println(symbolBalancing("()()()[()]"));  // true
-        System.out.println(symbolBalancing("((()))["));    // false
-        System.out.println(symbolBalancing("([)]"));       // false
-        System.out.println(symbolBalancing("[{]}"));       // false
-        System.out.println(symbolBalancing("[[]]{{{}}}")); // true
+        System.out.println(symbolBalancing("()()()[()]()"));  // true
+        System.out.println(symbolBalancing("((()))[]"));    // true
+        System.out.println(symbolBalancing("([])[]("));       // false
+        System.out.println(symbolBalancing("([{)]}"));       // false
+        System.out.println(symbolBalancing("[")); //false
+        System.out.println(symbolBalancing("[][][]{{{}}}")); // true
     }
 }
 
