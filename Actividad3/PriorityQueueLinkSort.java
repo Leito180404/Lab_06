@@ -25,14 +25,12 @@ class PriorityQueueLinkSort<E, N extends Comparable<N>> implements PriorityQueue
         Node<EntryNode> newNodeWrapper = new Node<>(newNode);
 
         if (isEmpty() || first.getDato().priority.compareTo(pr) < 0) {
-            // Si la cola está vacia o el nuevo nodo tiene mayor prioridad, agregarlo al frente
             newNodeWrapper.setNext(first);
             first = newNodeWrapper;
             if (last == null) {
-                last = newNodeWrapper; // Si la cola estaba vacia, last tambien apunta a este nodo
+                last = newNodeWrapper;
             }
         } else {
-            // Recorrer la cola para encontrar la posicion donde insertar el nuevo nodo
             Node<EntryNode> current = first;
             while (current.getNext() != null && current.getNext().getDato().priority.compareTo(pr) >= 0) {
                 current = current.getNext();
@@ -40,7 +38,7 @@ class PriorityQueueLinkSort<E, N extends Comparable<N>> implements PriorityQueue
             newNodeWrapper.setNext(current.getNext());
             current.setNext(newNodeWrapper);
             if (current == last) {
-                last = newNodeWrapper; // Si lo insertamos al final, actualizamos last
+                last = newNodeWrapper; 
             }
         }
     }
