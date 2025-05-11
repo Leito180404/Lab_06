@@ -6,10 +6,8 @@ public class Test1 {
     public static void main(String[] args) {
         Stack<Integer> stackInt = new StackLink<>();
         Stack<String> stackString = new StackLink<>();
-
         System.out.println("¿Esta vacia la pila de enteros? " + stackInt.isEmpty());
         System.out.println("¿Esta vacia la pila de strings " + stackString.isEmpty());
-    
         try {
             //pila de enteros
             stackInt.push(10);
