@@ -21,7 +21,7 @@ public class PriorityQueueLinked<E, N extends Number> implements PriorityQueue<E
     public void enqueue(E x, N pr) {
         int priority = pr.intValue();
         if (priority < 0 || priority >= priorities) {
-            throw new IllegalArgumentException("Prioridad inválida");
+            throw new IllegalArgumentException("Prioridad invalida");
         }
         queues[priority].enqueue(x);
     }
@@ -37,7 +37,7 @@ public class PriorityQueueLinked<E, N extends Number> implements PriorityQueue<E
                 }
             }
         }
-        throw new ExceptionEmpty("La cola de prioridad está vacía");
+        throw new ExceptionEmpty("La cola de prioridad esta vacia");
     }
 
     @Override
